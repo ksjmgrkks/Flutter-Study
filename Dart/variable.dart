@@ -30,4 +30,21 @@ void main() {
   print(isTrue); //true
   print(isFalse); //false
   
+  //문자열(String)
+  String firstName = 'Kyu Seong';
+  String lastName = 'Kim';
+  
+  print(firstName + lastName); // Kyu SeongKim
+  print(firstName + ' ' + lastName); // Kyu Seong Kim
+  print('풀 네임: ${firstName} ${lastName}'); // 풀 네임: Kyu Seong Kim
+  print('풀 네임: $firstName $lastName'); // 풀 네임: Kyu Seong Kim
+  print('${firstName.runtimeType} $lastName'); // String Kim
+  print('$firstName.runtimeType $lastName'); // Kyu Seong.runtimeType Kim
+    
+  //dynamic
+  dynamic dName = '규성';
+  var vName = '규성';
+  dName = 1; // 가능
+  // vName = 1; 불가능 -> var로 선언된 변수는 재할당시 이전 타입과 맞아야 함  
+  
 }
