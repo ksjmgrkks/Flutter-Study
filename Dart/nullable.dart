@@ -9,4 +9,12 @@ void main() {
   /* name2와 같은 nullable 변수에'!'를 붙이면 절대 null이 아니라는 표시임 (kotlin의 not-null assertion operator(!!) 표시와 같음)
      null이면 NoSuchMethodError 발생 (자바나 코틀린의 Null Pointer Exception(NPE))
      ex) print(name2!) */
+  
+  double? number = 4.0;
+  print(number); // 4
+  number = 2.0;
+  print(number); // 2
+  number = null;
+  print(number); // null
+  number ??= 3.0; //number가 null이면 3.0을 할당하고, 그렇지 않으면 원래 값 유지
 }
