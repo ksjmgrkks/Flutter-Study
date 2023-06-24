@@ -17,4 +17,10 @@ void main() {
   number = null;
   print(number); // null
   number ??= 3.0; //number가 null이면 3.0을 할당하고, 그렇지 않으면 원래 값 유지
+
+  int? num1;
+  int num2 = 10;
+
+  print((num1 ?? 5) + num2); // 출력: 15
+  // num1 ?? 5 => num1이 null일 경우 5라는 값을 할당하라는 표현
 }
